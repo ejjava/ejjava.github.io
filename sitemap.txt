@@ -9,6 +9,9 @@ https://ejjava.github.io/lb/sc.html
 https://ejjava.github.io/lb/sheji.html
 https://ejjava.github.io
 https://ejjava.github.io/games/1/index.html
+https://ejjava.github.io/games/2
+https://ejjava.github.io/games/3
+https://ejjava.github.io/games/4
 
 
 
