@@ -12,7 +12,9 @@ https://ejjava.github.io/games/1/index.html
 https://ejjava.github.io/games/2
 https://ejjava.github.io/games/3
 https://ejjava.github.io/games/4
-
+https://ejjava.github.io/games/5
+https://ejjava.github.io/games/6
+https://ejjava.github.io/games/7
 
 
 
