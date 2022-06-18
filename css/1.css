@@ -1,0 +1,69 @@
+#main{
+  max-width:385px;
+  margin: 0 auto; 
+}
+.fancy {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  border-width: 10px;
+}
+
+.demo{
+           margin-top: 100px;}
+       .demo1{position: fixed;
+           top: 0px; left:0px; bottom:0px; width:100%; height: 80px;background-color: #ffffff;z-index:999;}
+        .demo2{ position:fixed; left:0px; bottom:0px;  width:100%; height: 55px; background-color: #ffffff; z-index:999;
+          
+         text-align:center 
+          
+          }
+        
+        #to{
+  text-align:center
+
+
+  
+  }
+
+a:link   
+{   
+    color:#000;   
+    text-decoration:none;}   
+a:visited   
+{   
+    color:#000;   
+    text-decoration:none;}   
+a:hover   
+{   
+    color:#000;   
+    text-decoration:underline;}   
+a:active   
+{   
+    color:#000;   
+    text-decoration:underline;}   
+  
+    .zoomImage{
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+
+ #content{
+  text-align:center
+
+
+  
+  }
+ #wp{
+  text-align:center
+
+
+  
+  }
