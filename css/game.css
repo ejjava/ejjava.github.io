@@ -1,6 +1,7 @@
 #myInput {
  
   width: 100%; /* 全屏幕显示 */
+  height: 20%;
  
 }
  
@@ -12,14 +13,13 @@
 }
  
 #myUL li a {
-  border: 1px solid #ddd; /* 链接添加边框 */
-  margin-top: -1px; /* 防止边框重复 */
-  background-color: #f6f6f6; /* 设置灰色背景 */
-  padding: 12px; /* 添加内边距 */
+    
+ 
+ width: 50%;
   text-decoration: none; /* 移除默认的下划线 */
-  font-size: 18px; /* 设置字体大小 */
+  font-size: 14px; /* 设置字体大小 */
   color: black; /* 设置文本为黑色 */
-  display: block; /* 以块形式填充到列表 */
+  
 }
  
 #myUL li a:hover:not(.header) {
