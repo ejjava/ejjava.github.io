@@ -16,7 +16,7 @@
     
  
  width: 50%;
-  text-decoration: none; /* 移除默认的下划线 */
+  text-decoration: ; /* 移除默认的下划线 *none/
   font-size: 14px; /* 设置字体大小 */
   color: black; /* 设置文本为黑色 */
   
