@@ -1,23 +1,9 @@
-function myFunction() {
-  // 声明变量
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
- 
-  // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
- // 加密算法
+<!DOCTYPE html>
+<html>
+<head>
+  <title>激活码系统</title>
+  <script>
+    // 加密算法
     function encrypt(code) {
       var encryptedCode = '';
       for (var i = 0; i < code.length; i++) {
@@ -51,19 +37,25 @@ function myFunction() {
 
     // 弹出输入框进行验证
     function showInputBox() {
-      var userInput = prompt('请输入激活码(Q群901594028获取)');
+      var userInput = prompt('请输入激活码');
       verifyActivationCode(userInput);
     }
 
     // 验证激活码
     function verifyActivationCode(code) {
       var encryptedInput = encrypt(code);
-      var encryptedValidCode = encrypt('42daba5b9860d18a29ef7c2f8144b29c');
+      var encryptedValidCode = encrypt('52');
       if (encryptedInput === encryptedValidCode) {
         var encryptedCode = encrypt(code);
         localStorage.setItem('activationCode', encryptedCode);
         alert('激活码正确！已保存到本地。');
       } else {
+        alert('激活码不正确，请重新输入！');
         showInputBox();
       }
     }
+  </script>
+</head>
+<body onload="checkActivationCode()">
+</body>
+</html>
