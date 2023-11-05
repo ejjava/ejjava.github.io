@@ -244,7 +244,7 @@ var cardHtml = `
 <li><p>&nbsp;星座猎人-魔塔传说&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i1ziX09cuuwj">下载</a></p></li>
 <li><p>&nbsp;新年大闯关-2011&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iBWDT09cutri">下载</a></p></li>
 <li><p>&nbsp;吸血鬼之黑夜传说&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/ibVfr09cutub">下载</a></p></li>
-<li><p>&nbsp;玄灵传说.zip https://wwjw.lanzoum.com/iqFOI04h8i8b ">下载</a></p></li>
+<li><p>&nbsp;玄灵传说&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iqFOI04h8i8b ">下载</a></p></li>
 <li><p>&nbsp;喜羊羊塔防大作战&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/ibxfT09cuuzc">下载</a></p></li>
 <li><p>&nbsp;驯龙记&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iD7GX08gysna">下载</a></p></li>
 <li><p>&nbsp;星际飞轮_V_1_0&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iidYx09cuuuh">下载</a></p></li>
@@ -353,7 +353,7 @@ var cardHtml = `
 <li><p>&nbsp;诸神战纪2-死神之谜_V_1_0&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/ilXMd09cuxej">下载</a></p></li>
 <li><p>&nbsp;真大圣幻魔录&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iZLoD06njpuj">下载</a></p></li>
 <li><p>&nbsp;装甲特战队&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i6zPJ06i0h0h">下载</a></p></li>
-<li><p>&nbsp;众神之战.zip https://wwjw.lanzoum.com/i8CAN04h96eb ">下载</a></p></li>
+<li><p>&nbsp;众神之战.zip &nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i8CAN04h96eb ">下载</a></p></li>
 <li><p>&nbsp;醉江湖&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/itsK608gyuod">下载</a></p></li>
 
 <li><p>&nbsp;DreamIsland(CWA)retail_by_luan17&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i5ZXI09ctzab">下载</a></p></li>
@@ -559,7 +559,7 @@ var cardHtml = `
 <li><p>&nbsp;进退之间-新三国争霸&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iZ5Du09cu6fi">下载</a></p></li>
 <li><p>&nbsp;机械地牢&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i7rTM09cu7ti">下载</a></p></li>
 <li><p>&nbsp;绝密任务之杀出重围_V_1_0_1&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i3AIc09cu5xa">下载</a></p></li>
-<li><p>&nbsp;J2ME模拟器.apk https://wwjw.lanzoum.com/iaYSf06le0cj 密码：jar ">下载</a></p></li>
+
 <li><p>&nbsp;绝世高手武林至尊&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iymT209cu6oh">下载</a></p></li>
 <li><p>&nbsp;街头霸王2&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iPKISwhhshg">下载</a></p></li>
 <li><p>&nbsp;绝命岛之灵泣&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/i21Sh09cu5yb">下载</a></p></li>
@@ -893,7 +893,7 @@ var cardHtml = `
 <li><p>&nbsp;Cavemen_V_1_0&nbsp;&nbsp;&nbsp;<a href=" https://wwjw.lanzoum.com/i4mBr09ctx4d ">下载</a></p></li>
 <li><p>&nbsp;CuteBoy（GB模拟器）&nbsp;&nbsp;&nbsp;<a href=" https://wwjw.lanzoum.com/ioeh0vxzn7e ">下载</a></p></li>
 <li><p>&nbsp;刺客信条3兄弟会&nbsp;&nbsp;&nbsp;<a href=" https://wwjw.lanzoum.com/iU10Hvz3cta ">下载</a></p></li>
-<li><p>&nbsp;丛林奇兵2.zip https://wwjw.lanzoum.com/i2HQy04qu3aj ">下载</a></p></li>
+<li><p>&nbsp;丛林奇兵2.zip &nbsp;&nbsp;&nbsp;<a href=".zip https://wwjw.lanzoum.com/i2HQy04qu3aj ">下载</a></p></li>
 <li><p>&nbsp;宠物王国5彩虹&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iPaln06hzm6h">下载</a></p></li>
 <li><p>&nbsp;彩虹城堡3-命运的征程240×320&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iKCIO06od78j">下载</a></p></li>
 <li><p>&nbsp;超市大亨之MM梦幻超市_V_1_0&nbsp;&nbsp;&nbsp;<a href="https://wwjw.lanzoum.com/iD9z509ctvna">下载</a></p></li>
