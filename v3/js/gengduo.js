@@ -39,7 +39,7 @@ function showInputBox() {
 // 验证激活码
 function verifyActivationCode(code) {
   var encryptedInput = encrypt(code);
-  var encryptedValidCode = encrypt('ejjava520');
+  var encryptedValidCode = encrypt('42daba5b9860d18a29ef7c2f8144b29c');
   if (encryptedInput === encryptedValidCode) {
     var encryptedCode = encrypt(code);
     localStorage.setItem('activationCode', encryptedCode);
