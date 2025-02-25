@@ -14,13 +14,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
     <meta name="renderer" content="webkit" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="https://unpkg.com/mdui@2.0.3/mdui.css">
-    <script src="https://unpkg.com/mdui@2.0.3/mdui.global.js"></script>
+    <link rel="stylesheet" href="css/javagames.css" />
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
     <script src="./kbn/autoload.js"></script>
     <link rel="stylesheet" href="./kbn/font-awesome.min.css">
     <link href="./kbn/waifu.css" rel="stylesheet" type="text/css">
     <script src="js/gengduo.js"></script>
+    <style>
+  /* 隐藏列表项前的点 */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  /* 搜索框样式 */
+  #searchBox {
+    margin-bottom: 10px;
+  }
+</style>
+
+
+    <style>
+        /* 隐藏列表项前的点 */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        /* 搜索框美化 */
+        #searchnBox {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #searchInput {
+            width: 100%;
+            padding: px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 
 <body>
@@ -119,10 +154,10 @@
                                         </div>
                                     </div>
                                     <h2>资源清单</h2>
-                                    <h4>提示:请用浏览器的搜索进行查找</h4>
-                                    <h4><a href="。" target="_blank">点击获取</a>
+                                    <h4>提示:请用浏览器的搜索进行查找<br>提示:解压密码群里获取<br>   <br>提示:如果清单没有也可以点击获取然后等待站长寻找</h4>
+                                    <h4><a href="https://pan.baidu.com/s/1Z7qs7G3RTU_dN6YmhTM0tQ?pwd=ejwz" target="_blank">点击获取(点我点我点我！)</a>
                                                                      
-   <h6>提示:如果清单没有也可以点击获取然后等待站长寻找</h6>
+
                                     </h4>
    
 <style>
@@ -134,19 +169,19 @@
 </style>
 
 <h3 id="loading">加载中...</h3>
-<div id="content">加载完毕</div>
-
+    <div id="content">
+        <h5>
+            <div id="searchBox">
+                <input type="text" id="searchInput" placeholder="搜索...">
+            </div>
+            <ul id="myList"></ul>
+        </h5>
+    </div>
+<ul id="myList"></ul>
+  
+</h5></div>
 <script>
-// 在页面加载完毕后执行
-document.addEventListener("DOMContentLoaded", function() {
-  // 延迟1秒将显示内容切换为隐藏内容
-  setTimeout(function() {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("content").style.display = "block";
-  }, 3000);
-});
-</script>
-                                    
+                         
                                     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="40%" color=#987cb9 SIZE=1>
                                 </div>
                             </div>
@@ -169,6 +204,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         </div>
+ <script src="js/games.js"></script>
+    <script src="js/so.js"></script>
+
 
         <script>
             const example = document.querySelector(".example-modal");
@@ -196,5 +234,5 @@ document.addEventListener("DOMContentLoaded", function() {
 <!-- Two Tone -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
 <script src="js/sitetime.js"></script><!-- 运行时间 -->
- <script src="js/content.js"></script><!-- 拼接 -->
+ 
 </html>
