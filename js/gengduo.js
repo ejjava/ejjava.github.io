@@ -32,14 +32,14 @@ function checkActivationCode() {
 
 // 弹出输入框进行验证
 function showInputBox() {
-  var userInput = prompt('请输入激活码(Q群901594028获取)');
+  var userInput = prompt('很抱歉，希望您的理解！请输入激活码(Q群901594028获取)');
   verifyActivationCode(userInput);
 }
 
 // 验证激活码
 function verifyActivationCode(code) {
   var encryptedInput = encrypt(code);
-  var encryptedValidCode = encrypt('42daba5b9860d18a29ef7c2f8144b29c');
+  var encryptedValidCode = encrypt('ejjava520');
   if (encryptedInput === encryptedValidCode) {
     var encryptedCode = encrypt(code);
     localStorage.setItem('activationCode', encryptedCode);
