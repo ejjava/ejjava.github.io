@@ -2,116 +2,60 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>友链 · E简JAVA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>下载站 · E简JAVA</title>
 <meta name="description" content="仍在运营的塞班与 J2ME 第三方站点，本站不提供游戏文件，想下载请前往这些站点。">
 <meta name="keywords" content="塞班,J2ME,Java游戏,友链,下载站,资源站">
 <link rel="icon" href="./favicon.ico">
-<link rel="stylesheet" href="./css/site.css">
-  <script src="./js/gate.js"></script>
-</head>
-<body>
+<link rel="stylesheet" href="./css/site.css?v=13">
+  <script src="./js/gate.js?v=13"></script>
+</head><body>
 
 <div class="wrap">
 
     <aside class="side">
         <a class="brand" href="./index.html">E简JAVA</a>
-        <div class="brand-sub">Java Game Archive</div>
-        <ul class="nav">
+        <div class="brand-sub">Java Game Archive</div>        <ul class="nav">
             <li><a href="./index.html">首页</a></li>
-            <li><a href="./games.html">档案目录</a></li>
-            <li><a href="./timeline.html">年份线</a></li>
+            <li><a href="./games.html">目录</a></li>
+            <li><a href="./timeline.html">年份</a></li>
             <li><a href="./vendors.html">厂商</a></li>
             <li><a href="./categories.html">类型</a></li>
-            <li><a href="./links.html" class="on">友链</a></li>
+            <li><a href="./search.html">搜索</a></li>
+            <li><a href="./links.html">下载</a></li>
             <li><a href="./resource.html">工具</a></li>
             <li><a href="./Helps.html">帮助</a></li>
             <li><a href="./Course.html">历程</a></li>
             <li><a href="./About.html">关于</a></li>
         </ul>
-        <div class="nav-foot">
-            老手机请走<br>
-            <a href="./lite.html">纯文字版</a>
-        </div>
-    </aside>
+        <div class="nav-foot"><a class="lite-pill" href="./lite.html">文字版</a></div>
+        </aside>
 
-    <main class="main">
+<main class="main">
 
-        <h1>友链</h1>
+        <h1>下载站</h1>
         <p class="lede">想下游戏，请走这里</p>
 
-        <p>本站只做记录，不存文件、不给下载地址。下面这些站点仍在运营，需要 .jar 文件的话点标题直接过去。</p>
+        <p>还在运营的站，想找 .jar 就点名字过去。打不开或者已经停了的，在帮助页留一句。</p>
 
-        <p class="note">链接指向第三方站点，内容与安全性由对方负责，本站不做担保。站点失效请在<a href="./Helps.html">帮助</a>页留言。</p>
+        <p class="note">链接指向第三方站点，内容与安全性由对方负责，本站不做担保。站点失效请在帮助页留言。</p>
 
-        <ul class="links">
+        <div class="links" id="site-list"></div>
 
-            <li>
-                <a class="link-item" href="http://j2mecloud.ddns.net:3092/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">J2MECloud 游软下载</span>
-                    <span class="link-desc">收录 J2ME 游戏与软件资源，条目带截图与详情页，支持关键词检索。</span>
-                    <span class="link-host">j2mecloud.ddns.net:3092</span>
-                </a>
-            </li>
-
-            <li>
-                <a class="link-item" href="http://java.52emu.cn/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">52模拟器</span>
-                    <span class="link-desc">Java 游戏按类型分栏陈列，站内自带跨站搜索的几个入口。</span>
-                    <span class="link-host">java.52emu.cn</span>
-                </a>
-            </li>
-
-            <li>
-                <a class="link-item" href="https://java.owoemu.com/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">Java游戏小站</span>
-                    <span class="link-desc">近六百条游戏的个人站点，附 Java 模拟器与塞班模拟器的资料。</span>
-                    <span class="link-host">java.owoemu.com</span>
-                </a>
-            </li>
-
-            <li>
-                <a class="link-item" href="https://www.jvgme.com/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">JVGME</span>
-                    <span class="link-desc">带社区功能的 Java 游戏站，分类较细，浏览需要浏览器开启 JavaScript。</span>
-                    <span class="link-host">www.jvgme.com</span>
-                </a>
-            </li>
-
-            <li>
-                <a class="link-item" href="http://jvgm.cc/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">JAVA游戏资料库</span>
-                    <span class="link-desc">纯列表式的资料库，逐条编号可点，没有站内搜索，只能顺次翻。</span>
-                    <span class="link-host">jvgm.cc</span>
-                </a>
-            </li>
-
-            <li>
-                <a class="link-item" href="https://iniche.cn/" target="_blank" rel="noopener noreferrer">
-                    <span class="link-name">小众网</span>
-                    <span class="link-desc">面向小众机型与软件的综合站，不专做 Java 游戏。</span>
-                    <span class="link-host">iniche.cn</span>
-                </a>
-            </li>
-
-        </ul>
-
-        <p class="note">前五个站点里，前三个的站内搜索已经在条目详情页接通了——从任意一条档案点「在 XX 搜索」，会直接带上这个游戏名跳到对方的搜索结果。JVGME 打开的是搜索页，关键词还要在页内输一次；JAVA游戏资料库没有搜索功能。</p>
-
-        <p class="note">如果你的站点也在做同类内容，欢迎交换。联系方式见<a href="./About.html">关于</a>页。</p>
-
+        <p class="note">标签写着「友链」的，是对方站上确实放了本站链接的；其余标「其他」，是本站自己收进来的。能直接带关键词搜的，已经同时接进了「<a href="./search.html">搜索</a>」页和每条档案的详情页。</p>
+        <p class="note">你的站也在做同类内容的话，可以换链接，联系方式在<a href="./About.html">关于</a>页。</p>
         <div class="foot">
-            <p>本站为历史资料索引，仅收录书目性信息，不提供任何游戏文件或下载地址。著作权归各自权利人所有。</p>
+            <p>本站不存安装包，文件都在百度网盘。著作权、商标归各自权利人所有。本站是非营利的个人资料索引站，不提供、不转存、不销售任何游戏文件，也不抓取第三方站点的内容；条目信息整理自公开资料，仅供考据与交流。</p>
             <p>条目有误或涉及权利归属异议，请联系 <a href="mailto:3360342659@qq.com">3360342659@qq.com</a>，核实后更正或删除相关记录。</p>
             <div id="sitetime"></div>
             <div class="flag"><img src="./img/China.svg" alt=""></div>
         </div>
-
     </main>
 
 </div>
 
-<script src="./js/site.js"></script>
-<script src="./js/sitetime.js"></script>
+<script src="./data/search-sites.js?v=13"></script>
+<script src="./js/links.js?v=13"></script>
+<script src="./js/site.js?v=13"></script>
+<script src="./js/sitetime.js?v=13"></script>
 </body>
 </html>
