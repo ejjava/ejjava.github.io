@@ -109,6 +109,24 @@ a:hover { color: var(--accent-2); text-decoration: underline; text-underline-off
     color: var(--ink-faint);
 }
 
+.lite-pill {
+    display: inline-block;
+    padding: 4px 11px;
+    border: 1px solid var(--line-soft);
+    border-radius: 999px;
+    color: var(--ink-faint);
+    font-size: 11px;
+    letter-spacing: .02em;
+    text-decoration: none;
+    transition: color .18s, border-color .18s;
+}
+
+.lite-pill:hover {
+    color: var(--ink);
+    border-color: var(--line);
+    text-decoration: none;
+}
+
 /* ---------- 标题与正文 ---------- */
 
 h1 {
@@ -663,6 +681,50 @@ p.note {
 }
 .stamp.ok { border-color: #a89463; color: #6a5a2c; background: #f4eeda; }
 .stamp.pending { border-color: #b98750; color: #8a4f22; background: #f9f0e1; }
+
+/* 状态徽标：跟在游戏名后面，小一号 */
+.stamp-inline {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0 7px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .04em;
+    line-height: 19px;
+    vertical-align: 2px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    color: var(--ink-soft);
+}
+.stamp-inline.ok { border-color: #a89463; color: #6a5a2c; background: #f4eeda; }
+.stamp-inline.pending { border-color: #b98750; color: #8a4f22; background: #f9f0e1; }
+
+/* 资源在哪：一个网盘一行，普通链接，不用按钮 */
+.drive-links {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+}
+.drive-links[hidden] { display: none; }
+.drive-links li { margin: 0 0 7px; font-size: 14px; }
+.drive-links a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* 下载站列表里的「友链 / 其他」小标签，跟在站名后面 */
+.link-tag {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 0 6px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: .04em;
+    vertical-align: 3px;
+    border: 1px solid var(--line-soft);
+    border-radius: 2px;
+    color: var(--ink-faint);
+}
 .todo { color: var(--ink-faint); font-style: italic; letter-spacing: .02em; }
 
 /* 引用这一条 */
@@ -677,3 +739,40 @@ p.note {
 }
 .cite-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0; }
 .cite-hint { font-size: 13px; color: var(--ink-faint); }
+/* 全网搜索页的输入框 */
+.search-box { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 4px; }
+.search-box input {
+    flex: 1 1 240px;
+    min-width: 0;
+    padding: 7px 11px;
+    font: 14px/1.4 var(--sans);
+    color: var(--ink);
+    background: #fffdf7;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+}
+.search-box input:focus { outline: none; border-color: var(--accent-2); }
+
+/* ---------- 内容页统一结构：问答块 / 时间轴 / 工具卡 ---------- */
+.qa { max-width: 660px; margin: 0 0 18px; padding-left: 16px; border-left: 2px solid var(--line-soft); }
+.qa h3 { font-size: 14.5px; font-weight: 600; margin: 0 0 5px; color: var(--ink); letter-spacing: .01em; }
+.qa p { margin: 0; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
+
+.tl { list-style: none; margin: 0 0 6px; padding: 0 0 0 18px; max-width: 680px; border-left: 1px solid var(--line); }
+.tl li { position: relative; margin: 0 0 11px; font-size: 13.5px; line-height: 1.8; color: var(--ink-soft); }
+.tl li::before { content: ""; position: absolute; left: -20.5px; top: 8px; width: 5px; height: 5px; border-radius: 50%; background: var(--line); }
+.tl time { display: inline-block; min-width: 76px; margin-right: 10px; color: var(--ink-faint); font-size: 12.5px; font-variant-numeric: tabular-nums; }
+
+.tool { max-width: 660px; margin: 0 0 20px; padding-left: 16px; border-left: 2px solid var(--line-soft); }
+.tool h3 { margin: 0 0 5px; font-size: 14.5px; font-weight: 600; color: var(--ink); }
+.tool p { margin: 0 0 8px; font-size: 14.5px; line-height: 1.8; color: var(--ink); }
+.tool .more { margin: 0; font-size: 12.5px; }
+/* 首页的访问数 */
+.visit {
+    margin: 20px 0 0;
+    padding-top: 14px;
+    border-top: 1px dashed var(--line);
+    font-size: 12.5px;
+    color: var(--ink-faint);
+    letter-spacing: .04em;
+}
