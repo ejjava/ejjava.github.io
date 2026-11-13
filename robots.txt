@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /lite.html
+Disallow: /lite-arch.html
+Disallow: /detail.html
