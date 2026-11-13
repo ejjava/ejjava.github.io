@@ -76,7 +76,6 @@
                     '<span class="no">' + (start + i + 1) + '</span>' +
                     '<span class="nm"><a href="./detail.html?' + (it.id ? 'g=' + encodeURIComponent(it.id) : 'n=' + encodeURIComponent(it.name || '')) + '">' + esc(it.name || '（未命名）') + '</a></span>' +
                     '<span class="meta">' + tags + '</span>' +
-                    (it.desc ? '<p class="desc">' + esc(it.desc) + '</p>' : '') +
                     '</li>';
         }
         el.list.innerHTML = html;
