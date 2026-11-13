@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全网搜索 · E简JAVA</title>
+<meta name="description" content="输入游戏名，一次跳到几个 J2ME 站点的搜索结果。本站只带关键词过去，不抓取对方内容。">
+<link rel="icon" href="./favicon.ico">
+<link rel="stylesheet" href="./css/site.css?v=13">
+</head>
+<body>
+
+<div class="wrap">
+
+    <aside class="side">
+        <a class="brand" href="./index.html">E简JAVA</a>
+        <div class="brand-sub">Java Game Archive</div>
+        <ul class="nav">
+            <li><a href="./index.html">首页</a></li>
+            <li><a href="./games.html">目录</a></li>
+            <li><a href="./timeline.html">年份</a></li>
+            <li><a href="./vendors.html">厂商</a></li>
+            <li><a href="./categories.html">类型</a></li>
+            <li><a href="./search.html" class="on">搜索</a></li>
+            <li><a href="./links.html">下载</a></li>
+            <li><a href="./resource.html">工具</a></li>
+            <li><a href="./Helps.html">帮助</a></li>
+            <li><a href="./Course.html">历程</a></li>
+            <li><a href="./About.html">关于</a></li>
+        </ul>
+        <div class="nav-foot"><a class="lite-pill" href="./lite.html">文字版</a></div>
+    </aside>
+
+    <main class="main">
+
+        <h1>全网搜索</h1>
+        <p class="lede">一个词，同时在这几个站里搜。</p>
+
+        <form id="q-form" class="search-box">
+            <input id="q" type="text" placeholder="输入游戏名，比如 鬼吹灯" autocomplete="off">
+            <button type="submit" class="btn">搜索</button>
+        </form>
+
+        <ul class="site-list" id="all-results"></ul>
+        <p class="note" id="all-tip">输一个字或一个词，下面会列出每一家的搜索入口。点哪条就跳到哪一家的搜索结果。</p>
+
+        <p class="note">这些站都不归本站运营。点开只是把关键词带过去，结果由对方给出；本站不抓取、不缓存、不转存对方的任何内容，也不担保对方的文件和可用性。</p>
+
+        <div class="foot">
+            <p>本站不存安装包，文件都在百度网盘。著作权、商标归各自权利人所有。<br>本站是非营利的个人资料索引站，不提供、不转存、不销售任何游戏文件，也不抓取第三方站点的内容；条目信息整理自公开资料。若相关内容的权利人希望更正或删除某条记录，邮件联系 <a href="mailto:3360342659@qq.com">3360342659@qq.com</a>，核实后第一时间处理。</p>
+            <div id="sitetime"></div>
+            <div class="flag"><img src="./img/China.svg" alt=""></div>
+        </div>
+
+    </main>
+
+</div>
+
+<script src="./data/search-sites.js?v=13"></script>
+<script src="./js/search-all.js?v=13"></script>
+<script src="./js/site.js?v=13"></script>
+<script src="./js/sitetime.js?v=13"></script>
+</body>
+</html>
