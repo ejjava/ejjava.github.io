@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>条目详情 · E简JAVA</title>
-<meta name="description" content="塞班与 J2ME 平台 Java 游戏条目详情：名称、类型、发行商、年份、适配与说明。不提供任何游戏文件或下载地址。">
+<meta name="description" content="塞班与 J2ME 平台 Java 游戏条目详情：名称、类型、发行商、年份、适配与说明。资源放在百度网盘，按编号自取。">
 <meta name="robots" content="noindex">
 <link rel="icon" href="./favicon.ico">
-<link rel="stylesheet" href="./css/site.css">
-  <script src="./js/gate.js"></script>
+<link rel="stylesheet" href="./css/site.css?v=13">
+  <script src="./js/gate.js?v=13"></script>
 </head>
 <body>
 
@@ -19,34 +19,38 @@
         <div class="brand-sub">Java Game Archive</div>
         <ul class="nav">
             <li><a href="./index.html">首页</a></li>
-            <li><a href="./games.html" class="on">档案目录</a></li>
-            <li><a href="./timeline.html">年份线</a></li>
+            <li><a href="./games.html" class="on">目录</a></li>
+            <li><a href="./timeline.html">年份</a></li>
             <li><a href="./vendors.html">厂商</a></li>
             <li><a href="./categories.html">类型</a></li>
-            <li><a href="./links.html">友链</a></li>
+            <li><a href="./search.html">搜索</a></li>
+            <li><a href="./links.html">下载</a></li>
             <li><a href="./resource.html">工具</a></li>
             <li><a href="./Helps.html">帮助</a></li>
             <li><a href="./Course.html">历程</a></li>
             <li><a href="./About.html">关于</a></li>
         </ul>
-        <div class="nav-foot">
-            老手机请走<br>
-            <a href="./lite.html">纯文字版</a>
-        </div>
+        <div class="nav-foot"><a class="lite-pill" href="./lite.html">文字版</a></div>
     </aside>
 
     <main class="main">
 
-        <p class="crumb"><a href="./games.html">← 返回档案目录</a></p>
+        <p class="crumb"><a href="./games.html">← 返回目录</a></p>
 
         <article id="entry" hidden>
-            <h1 id="entry-name">—</h1>
+            <h1><span id="entry-name">—</span><span class="stamp-inline" id="entry-status" hidden></span></h1>
             <p class="lede" id="entry-sub"></p>
-            <p class="stamp" id="entry-status" hidden></p>
 
             <dl class="spec" id="entry-spec"></dl>
 
             <div class="entry-body" id="entry-desc"></div>
+
+            <section class="sect" id="entry-drive" hidden>
+                <h2>资源在哪</h2>
+                <p class="note">网站不放安装包。文件在百度网盘，按下面三行去对应文件夹里找。</p>
+                <dl class="spec" id="entry-drive-table"></dl>
+                <ul class="drive-links" id="entry-drive-links"></ul>
+            </section>
 
             <p class="note">本条的截图与图标存放在飞书表格的「档案条目」里。本站是纯静态站点，不保存图片文件，页面上也不加载图。
                 <a id="feishu-link" href="https://my.feishu.cn/base/RhJdbaTmoaa3k1swqBXc0ApI6zc" target="_blank" rel="noopener nofollow">在飞书查看这一条（含图片）→</a></p>
@@ -69,25 +73,15 @@
                 <ul class="rel-list" id="rel-list"></ul>
             </section>
 
-            <section class="sect" id="cite">
-                <h2>引用这一条</h2>
-                <p class="note">写文章、发帖、做视频时可以直接粘下面这段。条目编号由表格记录派生，改名、改字段都不会变，可以当固定出处用。</p>
-                <blockquote class="cite-text" id="cite-text">—</blockquote>
-                <p class="cite-row">
-                    <button class="btn" id="cite-copy" type="button">复制这段</button>
-                    <span class="cite-hint" id="cite-hint"></span>
-                </p>
-            </section>
-
-            <p class="note">本页只记录书目信息。站内不存放任何游戏文件，也不提供下载地址；需要文件请自行前往「<a href="./links.html">友链</a>」列出的第三方站点。</p>
+            <p class="note">本站不存文件。资源放在百度网盘，按上面的文件夹和编号自取；不在网盘里的，可以走「<a href="./links.html">下载</a>」里列出的站点。</p>
         </article>
 
         <div class="empty" id="entry-empty" hidden>
-            没有找到这个条目。<br>链接里的编号或名称可能已经失效，请回到<a href="./games.html">档案目录</a>重新选择。
+            没有找到这个条目。<br>链接里的编号或名称可能已经失效，请回到<a href="./games.html">目录</a>重新选择。
         </div>
 
         <div class="foot">
-            <p>本站为历史资料索引，仅收录书目性信息，不提供任何游戏文件或下载地址。著作权归各自权利人所有。</p>
+            <p>本站不存安装包，文件都在百度网盘。著作权、商标归各自权利人所有。本站是非营利的个人资料索引站，不提供、不转存、不销售任何游戏文件，也不抓取第三方站点的内容；条目信息整理自公开资料，仅供考据与交流。</p>
             <p>条目有误或涉及权利归属异议，请联系 <a href="mailto:3360342659@qq.com">3360342659@qq.com</a>，核实后更正或删除相关记录。</p>
             <div id="sitetime"></div>
             <div class="flag"><img src="./img/China.svg" alt=""></div>
@@ -97,11 +91,12 @@
 
 </div>
 
-<script src="./data/archive.js"></script>
-<script src="./data/record-links.js"></script>
-<script src="./data/search-sites.js"></script>
-<script src="./js/site.js"></script>
-<script src="./js/entry-page.js"></script>
-<script src="./js/sitetime.js"></script>
+<script src="./data/archive.js?v=13"></script>
+<script src="./data/drive-config.js?v=13"></script>
+<script src="./data/record-links.js?v=13"></script>
+<script src="./data/search-sites.js?v=13"></script>
+<script src="./js/site.js?v=13"></script>
+<script src="./js/entry-page.js?v=13"></script>
+<script src="./js/sitetime.js?v=13"></script>
 </body>
 </html>
