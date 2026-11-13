@@ -95,11 +95,11 @@
     if (stEl) {
         var stv = String(item.status == null ? '' : item.status).trim();
         if (stv === '已核对') {
-            stEl.className = 'stamp ok';
+            stEl.className = 'stamp-inline ok';
             stEl.textContent = '已核对';
             stEl.hidden = false;
         } else if (stv) {
-            stEl.className = 'stamp pending';
+            stEl.className = 'stamp-inline pending';
             stEl.textContent = stv;
             stEl.hidden = false;
         }
@@ -123,65 +123,49 @@
             ? '<a href="' + esc(src) + '" target="_blank" rel="noopener nofollow">在 MobyGames 检索这个作品 ↗</a>'
             : esc(src);
         rows.push(['资料来源', cell, true]);
-    } else {
-        rows.push(['资料来源', TODO, true]);
     }
     el.spec.innerHTML = rows.map(function (r) {
         var v = r[2] ? r[1] : esc(r[1]);
         return '<dt>' + esc(r[0]) + '</dt><dd>' + v + '</dd>';
     }).join('');
 
-    el.desc.innerHTML = item.desc ? '<p>' + esc(item.desc) + '</p>' : '';
-
-    /* 引用这一条：给一段能直接粘走的文字，方便别人写文章或发帖时引用 */
-    var citeEl = document.getElementById('cite-text');
-    var citeHint = document.getElementById('cite-hint');
-    var citeBtn = document.getElementById('cite-copy');
-
-    var bits = ['《' + item.name + '》'];
-    if (item.vendor) { bits.push(item.vendor); }
-    if (item.year) { bits.push(item.year + ' 年'); }
-    if (item.kind) { bits.push(item.kind); }
-    var citeLine = bits.join('，') + '。E简JAVA 档案';
-    if (item.id) { citeLine += '，条目编号 ' + item.id; }
-    if (item.source) {
-        var srcTxt = String(item.source);
-        citeLine += '，资料来源：' + (/^https?:\/\//i.test(srcTxt) ? 'MobyGames' : srcTxt);
+    /* 简介 + 正文：简介一行，正文按换行分段，正文没有上限 */
+    var bodyHtml = item.desc ? '<p class="entry-lede">' + esc(item.desc) + '</p>' : '';
+    if (item.body) {
+        var paras = String(item.body).split(/\r?\n/).filter(function (x) { return x.trim() !== ''; });
+        bodyHtml += paras.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('');
     }
-    citeLine += '。';
-    if (citeEl) { citeEl.textContent = citeLine; }
-
-    function fallbackCopy(txt, done) {
-        var ta = document.createElement('textarea');
-        ta.value = txt;
-        ta.setAttribute('readonly', '');
-        ta.style.position = 'fixed';
-        ta.style.top = '-1000px';
-        document.body.appendChild(ta);
-        ta.select();
-        var ok = false;
-        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
-        document.body.removeChild(ta);
-        done(ok);
+    if (!item.desc && !item.body) {
+        bodyHtml = '<p class="entry-lede entry-pending">这一条的文字还在整理中。简介与游戏背景暂缺，先记着编号与规格。</p>';
     }
+    el.desc.innerHTML = bodyHtml;
 
-    if (citeBtn) {
-        citeBtn.addEventListener('click', function () {
-            var txt = citeEl ? citeEl.textContent : '';
-            function done(ok) {
-                if (!citeHint) { return; }
-                citeHint.textContent = ok ? '已复制' : '复制失败，请手动选中上面的文字';
-                setTimeout(function () { citeHint.textContent = ''; }, 2600);
-            }
-            /* 本地 file:// 打开时浏览器常禁用剪贴板接口，退回老办法 */
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(txt).then(function () { done(true); },
-                    function () { fallbackCopy(txt, done); });
-            } else {
-                fallbackCopy(txt, done);
-            }
-        });
-    }
+    /* 资源在哪：文件夹 / 编号 / 文件名，全部来自飞书表，页面本身不存文件 */
+    (function () {
+        var box = document.getElementById('entry-drive');
+        var tbl = document.getElementById('entry-drive-table');
+        var linksEl = document.getElementById('entry-drive-links');
+        if (!box || !tbl) { return; }
+        var rowsD = [];
+        if (item.folder) { rowsD.push(['网盘文件夹', item.folder]); }
+        if (item.no) { rowsD.push(['网盘编号', item.no]); }
+        if (item.file) { rowsD.push(['文件名', item.file]); }
+        if (!rowsD.length) { return; }
+        tbl.innerHTML = rowsD.map(function (x) {
+            return '<dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd>';
+        }).join('');
+        /* 一个网盘一条链接，有几个排几行；没配链接时这块不占地方 */
+        var cfg = window.DRIVE_CONFIG || {};
+        var dls = (cfg.links || []).filter(function (l) { return l && l.url; });
+        if (linksEl) {
+            linksEl.innerHTML = dls.map(function (l, i) {
+                var label = l.name || ('网盘 ' + (i + 1));
+                return '<li><a href="' + esc(l.url) + '" target="_blank" rel="noopener nofollow">打开' + esc(label) + ' →</a></li>';
+            }).join('');
+            linksEl.hidden = dls.length === 0;
+        }
+        box.hidden = false;
+    })();
 
     /* 第三方站点检索：只生成跳转地址，不抓取、不预览、不转存对方内容 */
     var sites = window.SEARCH_SITES || [];
