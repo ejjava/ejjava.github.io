@@ -2,77 +2,91 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>帮助 · E简JAVA</title>
-<meta name="description" content="E简JAVA 档案站的常见问题：字段为什么为空、怎么检索、为什么不提供下载、发现错条目怎么反馈。">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>帮助 · E简JAVA</title>
+<meta name="description" content="E简JAVA 的常见问题：字段为什么为空、怎么检索、文件在哪、发现错条目怎么反馈。">
 <meta name="keywords" content="塞班,J2ME,Java游戏,帮助,常见问题">
 <link rel="icon" href="./favicon.ico">
-<link rel="stylesheet" href="./css/site.css">
-  <script src="./js/gate.js"></script>
-</head>
-<body>
+<link rel="stylesheet" href="./css/site.css?v=13">
+  <script src="./js/gate.js?v=13"></script>
+</head><body>
 
 <div class="wrap">
 
     <aside class="side">
         <a class="brand" href="./index.html">E简JAVA</a>
-        <div class="brand-sub">Java Game Archive</div>
-        <ul class="nav">
+        <div class="brand-sub">Java Game Archive</div>        <ul class="nav">
             <li><a href="./index.html">首页</a></li>
-            <li><a href="./games.html">档案目录</a></li>
-            <li><a href="./timeline.html">年份线</a></li>
+            <li><a href="./games.html">目录</a></li>
+            <li><a href="./timeline.html">年份</a></li>
             <li><a href="./vendors.html">厂商</a></li>
             <li><a href="./categories.html">类型</a></li>
-            <li><a href="./links.html">友链</a></li>
+            <li><a href="./search.html">搜索</a></li>
+            <li><a href="./links.html">下载</a></li>
             <li><a href="./resource.html">工具</a></li>
-            <li><a href="./Helps.html" class="on">帮助</a></li>
+            <li><a href="./Helps.html">帮助</a></li>
             <li><a href="./Course.html">历程</a></li>
             <li><a href="./About.html">关于</a></li>
         </ul>
-        <div class="nav-foot">
-            老手机请走<br>
-            <a href="./lite.html">纯文字版</a>
-        </div>
-    </aside>
+        <div class="nav-foot"><a class="lite-pill" href="./lite.html">文字版</a></div>
+        </aside>
 
-    <main class="main">
+<main class="main">
+
 
         <h1>帮助</h1>
-        <p class="lede">常见问题</p>
+        <p class="lede">常被问到的几件事</p>
 
-        <h3>条目里的发行商、年份为什么是空的？</h3>
-        <p class="quiet">这些字段要逐条对照原始资料核对，正在分批补录。已确认的先更新到档案目录，没确认的宁可空着，也不填错的。</p>
-
-        <h3>怎么找某个游戏？</h3>
-        <p class="quiet">在「<a href="./games.html">档案目录</a>」页的搜索框输入游戏名、版本号或分辨率，支持模糊匹配。</p>
-
-        <h3>站点为什么不提供下载？</h3>
-        <p class="quiet">本站自 2026 年 11 月起转为资料索引站，只记录书目信息，不存放、不链接任何游戏文件或安装包。要下载请走「<a href="./links.html">友链</a>」页列出的第三方站点。</p>
-
-        <h3>分辨率字段为什么有很多是空的？</h3>
-        <p class="quiet">原始清单里只有部分条目带分辨率后缀，其余要逐个验证后补录。那个年代以 240×320 为主流，但也有 176×208、128×128 等早期规格。</p>
-
-        <h3>发现条目写错了怎么办？</h3>
-        <p class="quiet">走<a href="https://docs.qq.com/form/page/DZkNPRXZ0Q2pJRXNF" target="_blank" rel="noopener noreferrer">条目纠错表单</a>，或直接<a href="mailto:3360342659@qq.com">发邮件</a>。核实后更正，并在「<a href="./Course.html">历程</a>」页留下记录。</p>
-
-        <h3>想在自己手机上运行这些老程序？</h3>
-        <p class="quiet">去「<a href="./resource.html">工具</a>」页，那里收录了 J2ME-Loader 等开源模拟器与适用说明，本站不转载安装包。</p>
-
-        <h3>页面在诺基亚上看不了？</h3>
-        <p class="quiet">老机型会自动跳到纯文字版 <a href="./lite.html">lite.html</a>，那个页面没有图片、没有样式脚本，只要能打开网页就能读。</p>
-
-        <div class="foot">
-            <p>本站为历史资料索引，仅收录书目性信息，不提供任何游戏文件或下载地址。著作权归各自权利人所有。</p>
-            <p>条目有误或涉及权利归属异议，请联系 <a href="mailto:3360342659@qq.com">3360342659@qq.com</a>，核实后更正或删除相关记录。</p>
-            <div id="sitetime"></div>
-            <div class="flag"><img src="./img/China.svg" alt=""></div>
+        <div class="qa">
+            <h3>文件在哪？</h3>
+            <p>不在站上。每条详情页写着三样东西：网盘文件夹、网盘编号、文件名。按文件夹进网盘，再按编号找文件——编号 JAVA1，就找 JAVA1.zip。</p>
         </div>
 
-    </main>
+        <div class="qa">
+            <h3>网盘打不开、链接失效了怎么办？</h3>
+            <p>多半是分享有效期到了，或者被平台处理了。把是哪一条、编号多少发到群里或邮件里，看到会重新整理。</p>
+        </div>
+
+        <div class="qa">
+            <h3>为什么站上不放下载按钮？</h3>
+            <p>站只是个目录，文件都在网盘里。换文件不用改网站，站出了事，文件也还在。</p>
+        </div>
+
+        <div class="qa">
+            <h3>为什么大部分是 240×320？</h3>
+            <p>那一档是当年塞班机最常见的一块屏幕，同一款游戏往往只有这个分辨率能跑。偶尔有 128×160 或 176×208 的，详情页「适配分辨率」里会写。</p>
+        </div>
+
+        <div class="qa">
+            <h3>「待查证」是什么意思？</h3>
+            <p>年份、厂商或版本里，有至少一项没找到可靠出处，就先标着。等找到能对得上的资料，再改成「已核对」。</p>
+        </div>
+
+        <div class="qa">
+            <h3>怎么搜？</h3>
+            <p>目录页输入名字、厂商、版本或分辨率都行，边打边筛。<a href="./search.html">搜索</a>页可以一个词同时丢给好几家站。</p>
+        </div>
+
+        <div class="qa">
+            <h3>老手机怎么打开这个站？</h3>
+            <p>会自动转到<a href="./lite.html">文字版</a>：只有文字，没有脚本和图片，诺基亚这类机器也能翻。</p>
+        </div>
+
+        <div class="qa">
+            <h3>发现条目写错了？</h3>
+            <p>发邮件到 3360342659@qq.com，写清楚是哪一条、哪里错了、依据是什么，核实后改。</p>
+        </div>
+
+        <div class="qa">
+            <h3>联系</h3>
+            <p>QQ 914933408　QQ 群 901594028　邮箱 3360342659@qq.com</p>
+        </div>
+
+    
+</main>
 
 </div>
 
-<script src="./js/site.js"></script>
-<script src="./js/sitetime.js"></script>
+<script src="./js/site.js?v=13"></script>
+<script src="./js/sitetime.js?v=13"></script>
 </body>
 </html>
